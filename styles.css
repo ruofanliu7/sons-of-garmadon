@@ -6,7 +6,7 @@ body, html {
   .bgimg {
     background-position: center;
     background-size: cover;
-    background-image: url("/w3images/coffeehouse.jpg");
+    background-image: url("images/homewall.jpg");
     min-height: 75%;
   }
   
@@ -14,3 +14,16 @@ body, html {
     display: none;
   }
 
+
+  @font-face {
+    font-family: 'Ninjago';
+    src: url('https://www.fontsaddict.com/fontface/ninjago.ttf');
+}
+
+#logo{
+    background-color: white;
+    position:absolute;
+    left:1%;
+    top:5%;
+    border-radius: 100%;
+}
