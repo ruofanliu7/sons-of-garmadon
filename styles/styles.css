@@ -1,23 +1,23 @@
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
-  }
-  
-  .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/homewall.jpg");
-    min-height: 75%;
-  }
-  
-  .menu {
-    display: none;
-  }
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/homewall.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
 
 
-  @font-face {
-    font-family: 'Ninjago';
-    src: url('https://www.fontsaddict.com/fontface/ninjago.ttf');
+@font-face {
+  font-family: 'Ninjago';
+  src: url('https://www.fontsaddict.com/fontface/ninjago.ttf');
 }
 
 #logo{
