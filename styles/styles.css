@@ -202,3 +202,19 @@ body, html {
 
 .circleButton:hover{background-color: rgba(166, 166, 166, 0.8);
 transform:scale(1.25);}
+
+.align{
+  display: flex;
+  flex-direction: row;
+}
+
+.align input{
+  /* margin-top: 10px;
+  width:5%; */
+  left:50%;
+}
+
+.align label{
+  width:100%;
+  padding: 12px;
+}
