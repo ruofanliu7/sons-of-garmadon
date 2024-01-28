@@ -32,12 +32,23 @@
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px" font-family = "Ninjago">LEGO <br> NINJAGO</span>
+    <img src = "images/ninjagologo.jpg" id="NinjagoSign" width = "96%" height = "96%">
+    <div></div>
+    <span class="w3-text-white" style="font-size:90px" font-family = "Ninjago"><br></span>
+    <div></div>
   </div>
 </header>
 
-<div class = 'w3-top' id="logo">
-    <img src="images/SOG.png" height="50px" width="50px">
+<div class = "w3-top">
+    <div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+          </div>
+    </div>
+    <div id="logo">
+        <img src="images/SOG.png" height="50px" width="50px">
+    </div>
+
 </div>
 
 <!-- Add a background color and large text to the whole page -->
@@ -135,13 +146,10 @@
   <a href="#">Map</a>
   <a href="#">Custom Minifig</a>
   <a href="#">Blog</a>
+  <a href="quiz.html">Quiz</a>
 </div>
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-  <h2>Collapsed Sidebar</h2>
-  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
-</div>
+
 
 <!-- End page content -->
 </div>

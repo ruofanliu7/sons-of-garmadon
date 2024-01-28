@@ -1,23 +1,4 @@
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: #91c1d1;
-    background: -moz-linear-gradient(top, #91c1d1 0%, #91d1c1 99%);
-    background: -webkit-linear-gradient(top, #91c1d1 0%, #91d1c1 99%);
-    background: linear-gradient(to bottom, #91c1d1 0%, #91d1c1 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(
-        startColorstr="#91c1d1",
-        endColorstr="#91d1c1",
-        GradientType=0
-        );
-    text-align: center;
-    color: #fff;
-}
+
 h1 {
     font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
     letter-spacing: 2px;
@@ -83,7 +64,7 @@ h1 {
     background-color: transparent;
     text-transform: uppercase;
     padding: 10px;
-    color: #fff;
+    color: #000;
 }
 .button:hover {
     cursor: pointer;
