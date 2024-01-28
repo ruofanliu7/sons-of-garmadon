@@ -1,4 +1,9 @@
-
+.child {
+    height: 200px;
+    margin: 20px;
+    border: 5px solid;
+    background-color: #000000;
+}
 h1 {
     font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
     letter-spacing: 2px;

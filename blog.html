@@ -18,15 +18,15 @@
                 <script>
  
                     // Here the value is stored in new variable x 
-                    function myFunction() {
+                    function openGoogle() {
                         var term,myWindow;
                         term=document.getElementById('question').value;
-                        myWindow = window.open("http://www.google.com?query="+term,"_blank")
+                        myWindow = window.open("http://www.google.com?search?q="+term,"_blank")
                     }
                 </script>
                 <form onclick="document.getElementById('question').value = ''"  target="_blank">
                 <input type="text" id="question" name="Name" placeholder="🔍| Search for questions, people, and topics..."  >
-                <p><button class="w3-button" onclick="myFunction();" type="submit" id="submissionBlog" style="color:black; font: inherit;">Submit</button></p>
+                <p><button class="w3-button" onclick="openGoogle();" type="submit" id="submissionBlog" style="color:black; font: inherit;">Search on Google</button></p>
             </form>
             </div>
           </div>

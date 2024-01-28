@@ -161,8 +161,7 @@ body, html {
 #submissionBlog{
   background-color: white;
   position:absolute;
-  right: 35%;
+  right: 32%;
   top:1.5%;
   border-radius:20%;
-  style:"color=black";
 }

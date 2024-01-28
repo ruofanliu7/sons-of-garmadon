@@ -20,120 +20,120 @@ var tempStats = userStats; //Holds stat increases relating to user selection
 //The following array contains all question text elements
 
 var questionText =	[															
-                        "How did you spend your time in the late 90s/early 00s?", 	//q1
-                        "It's snack time. What are you eating?", 					//q2
-                        "What TV show did you most look forward to after school?", 	//q3
-                        "What toy could you not put down growing up?", 				//q4
-                        "What did you listen to in the 90s/early 00s?", 			//q5
-                        "What was your go to computer program at school?" 			//q6
+                        "What's Your Preferred Element?", 	//q1
+                        "How Would You Describe Your Leadership Style?", 					//q2
+                        "Choose Your Ideal Weapon:", 	//q3
+                        "What Motivates You in a Challenge?", 				//q4
+                        "How Do You Handle Stressful Situations?", 			//q5
+                        "Pick a Color:" 			//q6
                     ];
 
 //The following array contains all answer text elements for each question
 
 var answerText =	[		//question 1 answers													
-                        [	"Playing Neopets", 				
-                            "Playing Kingdom of Loathing", 
-                            "Trolling chatrooms",
-                            "Playing Quake or Doom",
-                            "I didn't have the internet",
-                            "Watching flash videos"],							
+                        [	"a) Fire",
+                        "b) Ice",
+                        "c) Lightning",
+                        "d) Earth",
+                        "e) Energy",
+                        "f) Water"],							
                             
                             //question 2 answers
-                        [	"Yowie", 							
-                            "Curly Wurlys and Chomps",
-                            "Mamee Noodles",
-                            "Fruit",
-                            "Sunnyboys",
-                            "Fruit rollups"],
+                        [	"a) Bold and assertive",
+                        "b) Calm and calculated",
+                        "c) Energetic and spontaneous",
+                        "d) Grounded and reliable",
+                        "e) Innovative and strategic",
+                        "f) Adaptable and intuitive"],
                             
                             //question 3 answers
-                        [	"Round the Twist", 
-                            "Rugrats",
-                            "Neighbours",
-                            "Are You Afraid of the Dark?",
-                            "Rocko's Modern Life",
-                            "Art Attack"],
+                        [	"a) Sword",
+                        "b) Shurikens",
+                        "c) Nunchucks",
+                        "d) Scythe",
+                        "e) Techno Blades",
+                        "f) Spear"],
                             
                             //question 4 answers
-                        [	"Cabbage Patch Doll", 
-                            "Rubix Cube",
-                            "Slime",
-                            "Hot Wheels",
-                            "Mighty Max/Polly Pocket",
-                            "Tamagotchi"],
+                        [	"a) A desire to be the best",
+                        "b) Solving problems with intelligence",
+                        "c) A sense of adventure and excitement",
+                        "d) Proving your reliability to others",
+                        "e) Pushing boundaries and discovering new possibilities",
+                        "f) Maintaining balance and harmony"],
                             
                             //question 5 answers
-                        [	"Spice Girls",
-                            "I didn't listen to music", 
-                            "rage",
-                            "Backstreet Boys",
-                            "The sweet sound of dial up",
-                            "So Fresh CDs"],		
+                        [	"a) Face it head-on with confidence",
+                        "b) Analyze the situation and strategize",
+                        "c) Crack a joke to lighten the mood",
+                        "d) Stay calm and focused",
+                        "e) Invent something to overcome the challenge",
+                        "f) Meditate and find inner peace"],		
 
                             //question 6 answers								
-                        [	"Kid Pix", 
-                            "Minesweeper",
-                            "Lemmings",
-                            "Zoombinis",
-                            "Microsoft Paint",
-                            "Pinball"]
+                        [	"a) Red",
+                        "b) White",
+                        "c) Blue",
+                        "d) Black",
+                        "e) Techno colors (neon green, purple, etc.)",
+                        "f) Silver"]
                     ]
 
 //The following array contains all personality stat increments for each answer of every question
 
 var answerValues =	[		//question 1 answer values
-                        [	[3,0,1,0,2,0], 		
-                            [0,0,0,1,2,3],		
-                            [0,3,0,2,1,0],
-                            [0,2,0,3,0,1],
-                            [2,1,3,0,0,0],
-                            [1,0,2,0,3,0] 
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
                         ],	
                     
                             //question 2 answer values
-                        [	[0,3,0,2,0,1], 
-                            [2,0,0,0,3,1],
-                            [0,2,0,0,1,3],
-                            [2,0,3,1,0,0],
-                            [1,0,0,3,2,0],
-                            [3,0,1,0,2,0] 
-                        ],
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
+                        ],	
 
                             //question 3 answer values
-                        [	[0,1,0,0,3,2], 
-                            [3,0,2,0,1,0],
-                            [1,0,3,0,2,0],
-                            [0,3,0,1,2,0],
-                            [0,0,0,2,1,3],
-                            [0,0,0,3,1,2] 
-                        ],
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
+                        ],	
                             
                             //question 4 answer values
-                        [	[2,0,3,0,1,0], 
-                            [0,1,0,3,0,2],
-                            [0,3,2,0,0,1],
-                            [0,0,0,2,1,3],
-                            [2,0,0,0,3,1],
-                            [3,0,0,2,1,0] 
-                        ],
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
+                        ],	
                             
                             //question 5 answer values
-                        [	[3,0,0,0,2,1], 
-                            [0,2,3,1,0,0],
-                            [0,0,0,2,1,3],
-                            [1,3,0,0,0,2],
-                            [0,0,0,3,2,1],
-                            [1,0,2,0,3,0] 
-                        ],
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
+                        ],	
                             
                             //question 6 answer values
-                        [	[1,0,0,3,2,0], 
-                            [0,3,0,2,0,1],
-                            [3,1,0,0,0,2],
-                            [1,0,0,2,3,0],
-                            [0,0,3,2,1,0],
-                            [0,0,1,2,0,3] 
-                        ]
+                        [	[2,1,1,0,0,0], 		
+                            [0,2,1,1,0,0],		
+                            [0,0,2,1,1,0],
+                            [0,0,0,2,1,0],
+                            [0,0,0,0,2,1],
+                            [1,0,0,0,0,2] 
+                        ],	
                     ]
 
 /* SHORTCUT VARIABLES */
@@ -150,7 +150,7 @@ var buttonElement = document.getElementById("button");
 buttonElement.addEventListener("click", changeState);	//Add click event listener to main button
 
 function changeState() {								
-    
+
     updatePersonality(); 	//Adds the values of the tempStats to the userStats										
     
     if (quizActive) {	
@@ -259,65 +259,61 @@ function setCustomPage() {
 /* The following code manipulates the CSS based on the personality results */
         
 function displayCustomPage(personality) {
+    var dict = {};
+    dict[0] = "Kai";
+    dict[1] = "Zane";
+    dict[2] = "Jay";
+    dict[3] = "Cole";
+    dict[4] = "Nya";
+    dict[5] = "Lloyd";
+    printResult.innerHTML = dict[personality];
     switch (personality) {
         
         case 0:	//cute code
             results.style.display = "inline-block";
             results.classList.add("cute");
             body.background = "none";
-            body.backgroundImage = "url('http://www.geocities.ws/dopeycodes/backgrounds/stars-pi.gif')";
+            body.backgroundImage = "url('../images/quiz_images/kai.gif')";
             body.backgroundRepeat = "repeat";
-            body.cursor = "url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto";
-            printResult.innerText = "cute";
             break;
             
         case 1:		//spooky
             results.style.display = "inline-block";
             results.classList.add("spooky");
             body.background = "none";
-            body.backgroundImage = "url('https://web.archive.org/web/20090805212330/http://www.geocities.com/alecbay/evilbackground.gif')";
+            body.backgroundImage = "url('../images/quiz_images/zane.gif')";
             body.backgroundRepeat = "repeat";
-            body.cursor = "url(https://web.archive.org/web/20091026222418/http://www.geocities.com/evil_empire_uo/demon.gif), auto";
-            printResult.innerText = "spooky";
             break;
             
         case 2:		//lame
             results.style.display = "inline-block";
             results.classList.add("lame");
             body.background = "none";
-            body.backgroundColor = "#008080";
-            body.cursor = "url(https://web.archive.org/web/20091027003810/http://ca.geocities.com/EverlastingIllusions/Miscellanous/Cursor9.gif), auto";
-            printResult.innerText = "lame";
+            body.backgroundImage = "url('../images/quiz_images/jay.gif')";
             break;
             
         case 3:		//nerdy
             results.style.display = "inline-block";
             results.classList.add("nerdy");
             body.background = "none";
-            body.backgroundImage = "url('https://www.dailydot.com/wp-content/uploads/fb5/e4/0ee32ed1e94e79d7d53d7be26bec7aa1.jpg')";
+            body.backgroundImage = "url('../images/quiz_images/cole.gif')";
             body.backgroundSize = "100% auto";
-            body.cursor = "url(https://web.archive.org/web/20090820061156/http://geocities.com/Tokyo/Club/8802/pikacursor.gif), auto";
-            printResult.innerText = "nerdy";
             break;
             
         case 4:		//silly
             results.style.display = "inline-block";
             results.classList.add("silly");
             body.background = "none";
-            body.backgroundImage = "url('https://web.archive.org/web/20091026075928/http://geocities.com/MotorCity/Pit/2600/pic/rainbow.gif')";
+            body.backgroundImage = "url('../images/quiz_images/nya.gif')";
             body.backgroundRepeat = "repeat";
-            body.cursor = "url(https://web.archive.org/web/20090731114836/http://hk.geocities.com/godofcat/mcmug/cursor1p2.gif), auto";
-            printResult.innerText = "silly";
             break;
             
         case 5:		//cool
             results.style.display = "inline-block";
             results.classList.add("cool");
             body.background = "none";
-            body.backgroundImage = "url('https://web.archive.org/web/20091027004451/http://hk.geocities.com/cs_unknowman/Background/background.gif')";
+            body.backgroundImage = "url('../images/quiz_images/lloyd.gif')";
             body.backgroundRepeat = "repeat";
-            body.cursor = "url(https://web.archive.org/web/20091026232535/http://www.geocities.com/john_miles_the_cucumber/arnoldcursorpreview.gif), auto";
-            printResult.innerText = "cool";
             break;
             
         default: 
