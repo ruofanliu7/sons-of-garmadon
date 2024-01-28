@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <script type="text/javascript" src="scripts/sidebar.js"></script>
 </head>
 <body>
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
+<!-- <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s3">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
@@ -25,7 +26,8 @@
       <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
     </div>
   </div>
-</div>
+</div> -->
+
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
@@ -33,6 +35,17 @@
     <span class="w3-text-white" style="font-size:90px" font-family = "Ninjago">LEGO <br> NINJAGO</span>
   </div>
 </header>
+
+<<<<<<< HEAD
+<div class = 'w3-top' id="logo">
+    <img src="images/SOG.png" height="50px" width="50px">
+=======
+<div class = "w3-top">
+    <div id="logo">
+        <img src="images/SOG.png" height="50px" width="50px">
+    </div>
+>>>>>>> 7da57a4e51901d54b7180350762d77bbf6059230
+</div>
 
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-large">
@@ -123,8 +136,23 @@
   </div>
 </div>
 
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div>
+
 <!-- End page content -->
 </div>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
