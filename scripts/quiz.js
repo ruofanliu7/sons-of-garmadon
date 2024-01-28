@@ -5,12 +5,12 @@ var questionState = 0;	//Keeps track of users place in quiz
 var quizActive = true;	//True until last question is answered
     
 var userStats =	[
-                    0,	//cute
-                    0, 	//spooky
-                    0, 	//lame 
-                    0, 	//nerdy 
-                    0, 	//silly 
-                    0 	//cool 
+                    0,	//Kai
+                    0, 	//Jay
+                    0, 	//Cole 
+                    0, 	//Zane 
+                    0, 	//Lloyd 
+                    0 	//Nya 
                 ];
 
 var tempStats = userStats; //Holds stat increases relating to user selection
@@ -148,18 +148,6 @@ var buttonElement = document.getElementById("button");
 /* QUIZ FUNCTIONALITY */
 
 buttonElement.addEventListener("click", changeState);	//Add click event listener to main button
-
-/* This function progresses the user through the quiz */
-
-function startQuiz() {
-    updatePersonality(); 	//Adds the values of the tempStats to the userStats										
-    initText(0);
-    questionState = 1;
-
-    buttonElement.disabled = true; //disables button until user chooses next answer
-    buttonElement.innerHTML = "Please select an answer";			
-    buttonElement.style.opacity = 0.7;
-}
 
 function changeState() {								
     
