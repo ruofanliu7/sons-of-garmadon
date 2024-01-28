@@ -127,7 +127,10 @@ body, html {
 }
 
 .item1 { grid-area: header;}
-.item2 { grid-area: side; }
+.item2 { grid-area: side; 
+        height:550px;
+        padding: 5px;
+      width:250px}
 .item3 { grid-area: main; }
 
 
@@ -181,3 +184,21 @@ body, html {
   text-align: justify;
   padding:7px;
 }
+
+.circleButton{
+  background-color: rgba(255, 255, 255, 0.8); /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width:200px;
+}
+
+.circleButton:hover{background-color: rgba(166, 166, 166, 0.8);
+transform:scale(1.25);}
