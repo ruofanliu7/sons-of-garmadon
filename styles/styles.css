@@ -218,3 +218,9 @@ transform:scale(1.25);}
   width:100%;
   padding: 12px;
 }
+
+.loco{
+  position: absolute;
+  bottom:-130%;
+  right:0%;
+}
