@@ -24,7 +24,7 @@ body, html {
     background-color: white;
     position:absolute;
     right:1%;
-    top:.5%;
+    top:20%;
     border-radius: 100%;
 }
 
@@ -90,4 +90,137 @@ body, html {
 #NinjagoSign{
   left : 50%;
   top: 400px;
+}
+
+#question{
+  width: 40%;
+  height:50px;
+  position:absolute;
+  left: 20%;
+  top:1%;
+  font-size: xx-large;
+  /* text-align: center; */
+}
+
+
+#BlogLeftLogo{
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 1%
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #0c0c0c;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 { grid-area: header;}
+.item2 { grid-area: side; 
+        height:550px;
+        padding: 5px;
+      width:250px}
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main side'
+    'main main main main main side';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#topLeftBlogGrid{
+  font-size: 10px;
+  position:absolute;
+  left: 10px;
+}
+
+#blueLink{
+  color:blue;
+}
+
+#submissionBlog{
+  background-color: white;
+  position:absolute;
+  right: 32%;
+  top:1.5%;
+  border-radius:8px;
+}
+
+#area {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #575757;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  orientation: fixed;
+  left:100px;
+}
+
+.bodyTextBlog{
+  font-size: 16px;
+  text-align: justify;
+  padding:7px;
+}
+
+.circleButton{
+  background-color: rgba(255, 255, 255, 0.8); /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width:200px;
+}
+
+.circleButton:hover{background-color: rgba(166, 166, 166, 0.8);
+transform:scale(1.25);}
+
+.align{
+  display: flex;
+  flex-direction: row;
+}
+
+.align input{
+  /* margin-top: 10px;
+  width:5%; */
+  left:50%;
+}
+
+.align label{
+  width:100%;
+  padding: 12px;
+}
+
+.loco{
+  position: absolute;
+  bottom:-130%;
+  right:0%;
 }
