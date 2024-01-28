@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript" src="scripts/sidebar.js"></script>
+   </head> 
+
+   <body>
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3"><img src="images/SOG.png" height="5%" width="3%" id="BlogLeftLogo">
+                <!-- <p>.</p> -->.<br><br>
+            </div>
+            <div class="w3-col s3">
+                <script>
+ 
+                    // Here the value is stored in new variable x 
+                    function myFunction() {
+                        var term,myWindow;
+                        term=document.getElementById('question').value;
+                        myWindow = window.open("http://www.google.com?query="+term,"_blank")
+                    }
+                </script>
+                <form onclick="document.getElementById('question').value = ''"  target="_blank">
+                <input type="text" id="question" name="Name" placeholder="🔍| Search for questions, people, and topics..."  >
+                <p><button class="w3-button" onclick="myFunction();" type="submit" id="submissionBlog" style="color:black; font: inherit;">Submit</button></p>
+            </form>
+            </div>
+          </div>
+
+          <div class="grid-container">
+            <!-- <div class="item1">
+                <div class="w3-col s3">
+                    <img src="images/SOG.png" height="10%" width="7%" id="BlogLeftLogo">
+                <p></br></p>
+                </div>
+            <div class="w3-col s3">
+                <input type="text" id="question" name="Name" placeholder="🔍| Search for questions, people, and topics..."  >
+            </div>
+        </div> -->
+            <div class="item2">
+                <div>
+
+                        Links to Other Pages!                    
+                    
+                    <p id ="blueLink">
+                        <a href = "index.html" target = _blank > Home </a>
+                        <br>
+                        <a href = "characters.html" target = _blank > Characters </a>
+                        <br>
+                        <a href = "" target = _blank > Map </a>
+                        <br>
+                        <a href = "" target = _blank > Custom Minifigures </a>
+                        <br>
+                        <a href = "quiz.html" target = _blank > Personality Quiz </a>
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="item3">
+                Main
+                <br>
+            </div>  
+          </div>
+
+   </body>
+
+
+
+</html>

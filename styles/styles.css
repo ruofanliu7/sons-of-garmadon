@@ -24,7 +24,7 @@ body, html {
     background-color: white;
     position:absolute;
     right:1%;
-    top:.5%;
+    top:20%;
     border-radius: 100%;
 }
 
@@ -90,4 +90,79 @@ body, html {
 #NinjagoSign{
   left : 50%;
   top: 400px;
+}
+
+#question{
+  width: 40%;
+  height:50px;
+  position:absolute;
+  left: 20%;
+  top:1%;
+  font-size: xx-large;
+  /* text-align: center; */
+}
+
+
+#BlogLeftLogo{
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 1%
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #0c0c0c;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 { grid-area: header;}
+.item2 { grid-area: side; }
+.item3 { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main side side'
+    'main main main main side side';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#topLeftBlogGrid{
+  font-size: 10px;
+  position:absolute;
+  left: 10px;
+}
+
+#blueLink{
+  color:blue;
+}
+
+#submissionBlog{
+  background-color: white;
+  position:absolute;
+  right: 35%;
+  top:1.5%;
+  border-radius:20%;
+  style:"color=black";
 }
