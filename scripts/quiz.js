@@ -56,26 +56,26 @@ var answerText =	[		//question 1 answers
                             
                             //question 4 answers
                         [	"a) A desire to be the best",
-                        "b) Solving problems with intelligence",
-                        "c) A sense of adventure and excitement",
-                        "d) Proving your reliability to others",
-                        "e) Pushing boundaries and discovering new possibilities",
-                        "f) Maintaining balance and harmony"],
+                        "b) Intelligent problem solving",
+                        "c) Adventure and excitement",
+                        "d) Proving your reliability",
+                        "e) Pushing boundaries",
+                        "f) Balance and harmony"],
                             
                             //question 5 answers
-                        [	"a) Face it head-on with confidence",
-                        "b) Analyze the situation and strategize",
-                        "c) Crack a joke to lighten the mood",
+                        [	"a) Face it with confidence",
+                        "b) Analyze and strategize",
+                        "c) Crack a joke",
                         "d) Stay calm and focused",
-                        "e) Invent something to overcome the challenge",
-                        "f) Meditate and find inner peace"],		
+                        "e) Invent something",
+                        "f) Find inner peace"],		
 
                             //question 6 answers								
                         [	"a) Red",
                         "b) White",
                         "c) Blue",
                         "d) Black",
-                        "e) Techno colors (neon green, purple, etc.)",
+                        "e) Neon green and purple",
                         "f) Silver"]
                     ]
 
